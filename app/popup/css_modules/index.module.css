@@ -1,0 +1,105 @@
+.main {
+  width: 35em;
+  padding: 1em;
+  border-radius: 0.75em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.nav button {
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.nav button:hover,
+.nav button.active {
+  background-color: var(--secondary);
+}
+
+.title {
+  flex-grow: 1;
+  color: var(--secondary);
+}
+
+.container {
+  display: grid;
+  outline: none;
+  gap: 0.4em;
+  padding: 0.3em;
+}
+
+.to {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.form {
+  display: grid;
+  padding: 1.4em 0.5em;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.field {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid var(--text);
+}
+
+.option {
+  padding: 5em;
+}
+
+.submit_button {
+  padding: 0.75em 1em;
+  border-radius: 0.5em;
+  border: none;
+  color: var(--light);
+  background-color: var(--secondary);
+}
+
+.modal {
+  position: absolute;
+  bottom: -50em;
+  left: 0;
+  width: 100%;
+  height: 14em;
+  padding: 0.3em;
+  display: grid;
+  place-content: center;
+  border-radius: 1em;
+  background-color: #ccc;
+  transition: 1s ease;
+}
+
+.close {
+  position: absolute;
+  top: 0.2em;
+  right: 0.5em;
+  font-weight: bold;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: red;
+}
+
+.modal p:not(p.close) {
+  font-size: 1.3em;
+}
